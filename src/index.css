@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* INICIO Transition de background color para los elemento con efectos de scroll */
+.bg-transition {
+   
+    transition: background-color 1s ease-out;
+}
+/* FIN  Transition de background color para los elemento con efectos de scroll */
+
+
+.contentbar{
+ border: 1px solid;
+}
+.bar{
+    width: 100px;
+    margin-left: 10px;
+    height: 0;
+    background-color: wheat;
+    transition: height 1s ease-in-out;
+}
+
+
+.contentbar:hover .bar{
+    height: 300px;
+}
+
+
+
+/* Animacion con transition DE LA PROPIEDAD BACKGROUND */
+
+
+
+.transitionBackground div{
+    width: 100px;
+    height: 200px;
+    background-color: violet;
+    box-sizing: border-box;
+    
+    
+   
+    
+
+    transition: background-color 1s ease-in, border-radius 2s ease-in-out 1ms;
+}
+
+.transitionBackground:hover  div{
+    background-color: red;
+    border-radius: 40px;
+
+}
+
+/* TRANSITION PARA LA PROPIEDAD ROTATE */
+.transitionRotate{
+    border: 1px solid black;
+    perspective: 800px;
+}
+
+.transitionRotate div{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    margin-left: 10px;
+
+    
+
+    transition: transform 1s ease-out;
+}
+
+
+.transitionRotate div:hover {
+    transform: rotateY(180deg);
+}
+
+
+
+
+/* Transition para la propiedad Opacity */
+
+.transition-opacity{
+    /* position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px dotted darkblue; */
+    transition: opacity  1s ease-out;
+    /* background-color: blueviolet; */
+    
+}
+
+
+/* TRANSITION PARA LA PROPIEDAD shadow */
+
+.transition-shadow{
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 14px;
+    box-sizing: border-box;
+    
+}
+
+.transition-shadow div{
+    margin-top: 40px;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    transition: box-shadow 1s ease-out;
+   
+    
+}
+
+
+.transition-shadow:hover div{
+    /* box-shadow: 20px 0px 30px 8px brown; */
+    box-shadow: 11px 11px 15px 11px brown;
+}
+
+/*  */
+
+
+
+/* Transition + animacion de border para que sea parecido a una burbuja  */
+
+.containerCardProfile{
+    /* animation-direction: alternate; */
+}
+
+.burbuja{
+    
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.burbuja div{
+    margin-top: 10px;
+    width: 250px;
+    height: 150px;
+    
+    border-radius: 5px;
+    background-color: blue;
+    box-sizing: border-box;
+    transition: border-radius 1s ease-out;
+
+    animation: burbujaRight 2s linear infinite  , burbujaLeft 4s linear infinite,  burbujaButtonRight 8s linear infinite , burbujaButtonLeft 9s linear infinite ;
+
+    /* Realizar una rotacion de animacion */
+}
+
+
+@keyframes burbujaRight {
+    0%{
+        border-top-right-radius: 0%;
+    }
+    50%{
+        border-top-right-radius: 40%;
+    }
+}
+
+@keyframes burbujaLeft {
+    0%{
+        border-top-left-radius: 0%;
+    }
+    50%{
+        border-top-left-radius: 30%;
+    }
+}
+
+@keyframes burbujaButtonRight {
+    0%{
+        border-bottom-right-radius: 0%;
+    }
+    50%{
+        border-bottom-right-radius: 50%;
+    }
+}
+
+
+@keyframes burbujaButtonLeft {
+    0%{
+        border-bottom-left-radius: 0%;
+    }
+    50%{
+        border-bottom-left-radius: 45%;
+    }
+}
+
+
+
+
+
+
