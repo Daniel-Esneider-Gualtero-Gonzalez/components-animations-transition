@@ -7,6 +7,7 @@ import Modal from './Modal'
 import CardsProfile from './CardsProfile'
 import ContenidoTransitionHeight from './ContenidoTransitionHeight'
 import ScrollAnimationContainer from './ScrollAnimationContainer'
+import Carousel from './componentes/Carousel'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -70,9 +71,10 @@ function App() {
       <div className='flex-none mx-1 w-[300px] h-[100px] bg-yellow-900 rounded'></div>
       <div className='flex-none mx-1 w-[300px] h-[100px] bg-yellow-900 rounded'></div>
       <div className='flex-none mx-1 w-[300px] h-[100px] bg-yellow-900 rounded'></div>
-      
-      
     </ScrollAnimationContainer>
+
+    <h1>Carrusel manual que se ven las demas elementos al fondo</h1>
+    <Carousel />
 
     
 
