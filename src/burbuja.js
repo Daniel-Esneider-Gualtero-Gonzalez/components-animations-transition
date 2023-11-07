@@ -1,6 +1,6 @@
 
 
-export function animateBurbuja(element) {
+export function animationBurbuja(element) {
     const propsAnimate = ['borderTopLeftRadius','borderTopRightRadius','borderBottomRightRadius','borderBottomLeftRadius']
     let idCleanAnimation = []
     const options = {

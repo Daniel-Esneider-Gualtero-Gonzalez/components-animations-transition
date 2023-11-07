@@ -24,6 +24,10 @@
     transition: height 1s ease-in-out;
 }
 
+.transitionHeight{
+    transition: height 1s ease-out;
+    /* height: 200px; */
+}
 
 .contentbar:hover .bar{
     height: 300px;

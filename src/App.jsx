@@ -5,6 +5,8 @@ import './App.css'
 import FlexVertical from './componentes/FlexVertical'
 import Modal from './Modal'
 import CardsProfile from './CardsProfile'
+import ContenidoTransitionHeight from './ContenidoTransitionHeight'
+import ScrollAnimationContainer from './ScrollAnimationContainer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -48,10 +50,29 @@ function App() {
 
       <div className='flex  containerCardProfile  bg-red-400 border p-3  border-black justify-center'>
       <CardsProfile />
-      {/* // <CardsProfile /> */}
+      <CardsProfile />
       <CardsProfile />
       </div>
     </div>
+
+    <h1 className='mt-8'>Componente para envolver contenido que este oculto con un estado que lo muestra</h1>
+    <ContenidoTransitionHeight title='Acount information'>
+      <div className='h-[200px]'>
+        sfsfsfsfsfsfs
+      </div>
+    </ContenidoTransitionHeight>
+    
+    <h1 className='mt-8'>ScrollAnimation Container</h1>
+    <ScrollAnimationContainer>
+      <div className='flex-none mx-1 w-[300px] h-[100px] bg-yellow-900 rounded'></div>
+      <div className='flex-none mx-1 w-[300px] h-[100px] bg-yellow-900 rounded'></div>
+      <div className='flex-none mx-1 w-[300px] h-[100px] bg-yellow-900 rounded'></div>
+      <div className='flex-none mx-1 w-[300px] h-[100px] bg-yellow-900 rounded'></div>
+      <div className='flex-none mx-1 w-[300px] h-[100px] bg-yellow-900 rounded'></div>
+      <div className='flex-none mx-1 w-[300px] h-[100px] bg-yellow-900 rounded'></div>
+      
+      
+    </ScrollAnimationContainer>
 
     
 
