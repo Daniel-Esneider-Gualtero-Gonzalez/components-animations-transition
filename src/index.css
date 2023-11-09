@@ -195,53 +195,15 @@
 
 /* ESTYLOS PARA CARRUSEL */
 
-.containerCarrusel{
-    /* display: flex; */
-    /* justify-content: center; */
-    perspective: 800px;
-    
-
-}
-
-.containerCarrusel .child:nth-child(1){
-   
-    
-    transform: translateZ();
-}
-
-.containerCarrusel .child:nth-child(2){
-   
-    
-    transform: translateZ(50px);
-}
-
-.containerCarrusel .child:nth-child(3){
-   
-    
-    transform: translateZ(130px);
-}
-
-.containerCarrusel .child:nth-child(4){
-   
-    
-    transform: translateZ(50px);
-}
-
-.containerCarrusel .child:nth-child(5){
-   
-    
-    transform: translateZ();
-
-
-}
-
 
 
 .animationRight {
-    animation-name: animationRight;
+    /* animation-name: animationRight; */
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-duration: 2s;
+
+    transition: all 1s ease-out;
 }
 
 

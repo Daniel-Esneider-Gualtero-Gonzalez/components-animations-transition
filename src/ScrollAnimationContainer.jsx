@@ -2,13 +2,13 @@ import React, { useEffect, useRef } from 'react'
 
 function ScrollAnimationContainer({children}) {
     const refScrollContainer = useRef()
-    let isScrollingRight = true;
+   
     function animateScrollElement() {
         // cardOcul()
-        
+        let isScrollingRight = true;
         
       if (isScrollingRight) {
-            console.log("scroll")
+          
         refScrollContainer.current.scrollLeft += 0.55; // Ajusta la velocidad de scroll
         if (refScrollContainer.current.scrollLeft >= refScrollContainer.current.scrollWidth - refScrollContainer.current.clientWidth) {
           isScrollingRight = false;
