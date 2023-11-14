@@ -8,6 +8,7 @@ import CardsProfile from './CardsProfile'
 import ContenidoTransitionHeight from './ContenidoTransitionHeight'
 import ScrollAnimationContainer from './ScrollAnimationContainer'
 import Carousel from './componentes/Carousel'
+import SelectCard from './componentes/SelectCard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -75,6 +76,9 @@ function App() {
 
     <h1>Carrusel manual que se ven las demas elementos al fondo</h1>
     <Carousel />
+
+    <h1 className='mt-10'>Carrusel manual que se ven las demas elementos al fondo</h1>
+    <SelectCard />
 
     
 
