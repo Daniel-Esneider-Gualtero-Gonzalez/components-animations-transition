@@ -9,6 +9,7 @@ import ContenidoTransitionHeight from './ContenidoTransitionHeight'
 import ScrollAnimationContainer from './ScrollAnimationContainer'
 import Carousel from './componentes/Carousel'
 import SelectCard from './componentes/SelectCard'
+import AnimationMovement from './componentes/AnimationMovement'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -80,6 +81,20 @@ function App() {
     <h1 className='mt-10'>Carrusel manual que se ven las demas elementos al fondo</h1>
     <SelectCard />
 
+    <h1>Animation movement</h1>
+   <div className='relative border border-black h-[500px] bg-gray-900'>
+    <AnimationMovement />
+    <AnimationMovement />
+    <AnimationMovement />
+    <AnimationMovement />
+    <AnimationMovement />
+    <AnimationMovement />
+    <AnimationMovement />
+    <AnimationMovement />
+    <AnimationMovement />
+    <AnimationMovement />
+    <AnimationMovement />
+   </div>
     
 
     <div className='w-[100px] h-[800px]'></div>
